@@ -25,8 +25,4 @@ filetype plugin indent on
 set background=dark
 colorscheme gruvbox
 
-" Additional Vim settings (optional)
-set number          " Show line numbers
-set tabstop=4       " Set tab size to 4 spaces
-set shiftwidth=4    " Indentation size
-set expandtab       " Use spaces instead of tabs
+
