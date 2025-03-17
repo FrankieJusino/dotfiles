@@ -11,5 +11,5 @@ if ! grep -q "source ~/.bashrc_aliases" ~/.bashrc; then
     echo 'source ~/.bashrc_aliases' >> ~/.bashrc
 fi
 
-# Prompt user to reload their environment
-echo "Setup complete! Run 'source ~/.bashrc' or log out and log back in for changes to take effect."
+source ~/.bashrc
+echo "Done :)"
