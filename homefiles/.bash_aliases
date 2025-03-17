@@ -1,0 +1,18 @@
+# Git Aliases 
+
+alias gs="git status"
+alias gst="git status -sb"
+alias gl="git log"
+alias ga="git add"
+alias gaa="git add -A"
+alias gal="git add ."
+alias gall="git add ."
+alias gca="git commit -a"
+alias gc="git commit -m"
+alias gcot="git checkout"
+alias gchekout="git checkout"
+alias gchckout="git checkout"
+alias gckout="git checkout"
+alias go="git push -u origin"
+alias gsh="git stash"
+alias gw="git whatchanged"
