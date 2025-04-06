@@ -51,5 +51,7 @@ rm -rf "$TEMP_DIR"
 
 # Confirm installation
 echo "Installation complete. AWS CLI version info:"
-aws --version
+echo "You can verify the installation by running the following command:"
+echo "aws --version"
+
 
