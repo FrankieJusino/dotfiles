@@ -1,0 +1,28 @@
+#!/bin/bash
+
+VUNDLE_DIR="$HOME/.vim/bundle/Vundle.vim"
+VIMRC_DEST="$HOME/.vimrc"
+VIMRC_SOURCE="$HOME/dotfiles/vim-config/.vimrc"
+
+# Step 1: Copy .vimrc file to home directory
+if [ -f "$VIMRC_SOURCE" ]; then
+    echo "Copying .vimrc to $HOME..."
+    cp "$VIMRC_SOURCE" "$VIMRC_DEST"
+else
+    echo "Error: .vimrc not found in vim-config folder"
+    exit 1
+fi
+
+# Step 2: Install Vundle if not installed
+if [ ! -d "$VUNDLE_DIR" ]; then
+    echo "Installing Vundle..."
+    git clone https://github.com/VundleVim/Vundle.vim.git "$VUNDLE_DIR"
+else
+    echo "Vundle is already installed."
+fi
+
+# Step 3: Install Vim plugins using Vundle
+echo "Installing Vim plugins..."
+vim +PluginInstall +qall
+
+echo "All done :)"
