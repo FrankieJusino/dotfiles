@@ -11,5 +11,9 @@ if ! grep -q "source ~/.bashrc_aliases" ~/.bashrc; then
     echo 'source ~/.bashrc_aliases' >> ~/.bashrc
 fi
 
-source ~/.bashrc
+read -p "Do you want to apply the changes now? (y/n): " answer
+if [[ "$answer" =~ ^[Yy]$ ]]; then
+    echo "bingo bango pingo pango"
+    source ~/.bashrc
+fi
 echo "Done :)"
